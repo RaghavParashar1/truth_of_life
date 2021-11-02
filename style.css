@@ -6,14 +6,18 @@
 
 .center {
     text-align: center;
+    vertical-align: middle;
+  }
+
+.heading {
     border: 3px solid #66fcf1;
     border-radius: 5px;
     color: #45a29e;
   }
 
-  body {
+body {
     background-color: #1f2833;
-    }
+  }
 
 /* The switch - the box around the slider */
 .switch {
@@ -26,6 +30,7 @@
 .text{
   color: #45a29e;
 }
+
 
 /* Hide default HTML checkbox */
 .switch input {
@@ -76,8 +81,10 @@ input:checked + .slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+  padding-left: 20px;
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
+
