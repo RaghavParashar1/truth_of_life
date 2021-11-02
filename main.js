@@ -1,12 +1,18 @@
-const switches = document.querySelectorAll("input[type=checkbox]");
-for(const s of switches) s.addEventListener("change", check);
+function display1(){
+    if((document.getElementById('Love').checked)&&(document.getElementById('Money').checked)){
+        document.getElementById('Money').checked=false;
+    }
+}
 
-function check(e) {
-  //count the number of checked switches:
-  let n = 0;
-  for(const s of switches) {
-    if(s.checked) n++;
-  }
-  // if there is more than 2 checked:
-  if(n > 2) e.target.checked = false;
+function display2(){
+    if((document.getElementById('Money').checked)&&(document.getElementById('Friends').checked)){
+        document.getElementById('Friends').checked=false;
+    }
+}
+
+
+function display3(){
+    if((document.getElementById('Love').checked)&&(document.getElementById('Friends').checked)){
+        document.getElementById('Love').checked=false;
+    }
 }
