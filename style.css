@@ -10,13 +10,13 @@
   }
 
 .heading {
-    border: 3px solid #66fcf1;
+    border: 3px solid var(--highlight);
     border-radius: 5px;
-    color: #45a29e;
+    color: var(--dark);
   }
 
 body {
-    background-color: #1f2833;
+    background-color: var(--primary);
   }
 
 /* The switch - the box around the slider */
@@ -28,7 +28,7 @@ body {
 }
 
 .text{
-  color: #45a29e;
+  color: var(--dark);
 }
 
 
@@ -47,7 +47,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #c5c6c7;
+  background-color: var(--light);
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -59,17 +59,17 @@ body {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #1f2838;
+  background-color: var(--secondary);
   -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked + .slider {
-  background-color: #66fcf1;
+  background-color: var(--highlight);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px var(--dark);
 }
 
 input:checked + .slider:before {
@@ -86,5 +86,14 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+:root {
+  --primary: #0b0c10;
+--secondary: #1f2833;
+--light: #c5c6c7;
+--dark: #66fcf1;
+--highlight: #45a29e;
 }
 
