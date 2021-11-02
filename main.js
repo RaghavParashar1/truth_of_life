@@ -1,18 +1,19 @@
-function display1(){
+function toggle1(){
     if((document.getElementById('Love').checked)&&(document.getElementById('Money').checked)){
         document.getElementById('Money').checked=false;
     }
 }
 
-function display2(){
+function toggle2(){
     if((document.getElementById('Money').checked)&&(document.getElementById('Friends').checked)){
         document.getElementById('Friends').checked=false;
     }
 }
 
 
-function display3(){
+function toggle3(){
     if((document.getElementById('Love').checked)&&(document.getElementById('Friends').checked)){
         document.getElementById('Love').checked=false;
     }
 }
+
