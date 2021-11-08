@@ -91,9 +91,9 @@ input:checked + .slider:before {
 
 :root {
   --primary: #0b0c10;
---secondary: #1f2833;
---light: #c5c6c7;
---dark: #66fcf1;
---highlight: #45a29e;
+  --secondary: #1f2833;
+  --light: #c5c6c7;
+  --dark: #66fcf1;
+  --highlight: #45a29e;
 }
 
