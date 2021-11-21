@@ -87,11 +87,11 @@ var icon = document.getElementById("icon");
 icon.onclick = function(){
     if(song.paused){
         song.play();
-        icon.src = "pause.png"
+        icon.src = "Images/pause.png"
         icon.title= "pause"
     }else{
         song.pause();
-        icon.src = "play.png"
+        icon.src = "Images/pause.png"
         icon.title= "play"
     }
 }
