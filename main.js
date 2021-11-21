@@ -1,3 +1,5 @@
+//  for troggle buttons
+
 function toggle1() {
     if ((document.getElementById('Love').checked) && (document.getElementById('Money').checked)) {
         document.getElementById('Money').checked = false;
@@ -16,6 +18,9 @@ function toggle3() {
         document.getElementById('Love').checked = false;
     }
 }
+
+
+// for offline page
 
 var onLine = navigator.onLine;
 
@@ -69,5 +74,24 @@ function check_connectivity() {
         document.body.style.backgroundColor = "#0b0c10";
 
         console.log("Rejoice!! The internet gods can be heard again.")
+    }
+}
+
+
+
+// for audio
+
+var song = document.getElementById("song");
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    if(song.paused){
+        song.play();
+        icon.src = "pause.png"
+        icon.title= "pause"
+    }else{
+        song.pause();
+        icon.src = "play.png"
+        icon.title= "play"
     }
 }
