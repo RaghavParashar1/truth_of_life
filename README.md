@@ -5,6 +5,4 @@ The Sad truth of life is that you can only have maximum 2 things at a time from 
 # Things I learnt from the peoject
 How to disable one toggle button when another one is enable
 How to add offline Page in a website and you can check the offline page by disabling the network once the website gets loaded.
-
-# Future work
-Add music in this website just to increasing the experience of website
+How to add music in this website.
