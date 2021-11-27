@@ -83,16 +83,22 @@ function check_connectivity() {
 
 var song = document.getElementById("song");
 var icon = document.getElementById("icon");
-
-icon.onclick = function(){
-    if(song.paused){
+var play_btn = document.getElementById("play");
+var pause_btn = document.getElementById("pause");
+song.volume = 0.05;
+icon.onclick = function changeSongState() {
+    if (song.paused) {
         song.play();
-        icon.src = "Images/pause.png"
-        icon.title= "pause"
-    }else{
+        // icon.src = "Images/pause.png"
+        icon.title = "pause"
+        play_btn.style.opacity = 0;
+        pause_btn.style.opacity = 1;
+    } else {
         song.pause();
-        icon.src = "Images/play.png"
-        icon.title= "play"
+        // icon.src = "Images/play.png"
+        icon.title = "play"
+        play_btn.style.opacity = 1;
+        pause_btn.style.opacity = 0;
     }
 }
 
@@ -106,17 +112,28 @@ let index = 0;
 let currenttext = '';
 let letter = '';
 
-(function type(){
-    if (count === texts.length){
+(function type() {
+    if (count === texts.length) {
         count = 0;
     }
     currenttext = texts[count];
     letter = currenttext.slice(0, ++index);
 
     document.querySelector(".typing").textContent = letter;
-    if(letter.length === currenttext.length){
+    if (letter.length === currenttext.length) {
         count++;
         index = 0;
+        console.log("test");
+        // wait(5000);
     }
-    setTimeout(type, 400);
+    setTimeout(type, 500);
 })();
+
+// function wait(ms){
+//     var start = new Date().getTime();
+//     var end = start;
+//     console.log("Waiting")
+//     while(end < start + ms) {
+//       end = new Date().getTime();
+//    }
+//  }

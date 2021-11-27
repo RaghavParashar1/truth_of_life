@@ -97,3 +97,26 @@ input:checked + .slider:before {
   --highlight: #45a29e;
 }
 
+.circle:hover{
+  cursor: pointer;
+  fill: var(--dark);
+}
+
+.circle {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#play {
+  position: absolute;
+  transform: translateX(-55px) translateY(25px);
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#pause {
+  position: absolute;
+  transform: translateX(-60px) translateY(28px);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
